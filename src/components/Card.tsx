@@ -46,6 +46,7 @@ export default function Card({
           data-testid={`${venueName} Rating`}
           value={rating}
           onChange={handleChange}
+          onClick={(e) => e.stopPropagation()}
         />
       </div>
     </InteractiveCard>
